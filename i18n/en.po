@@ -64,8 +64,3 @@ msgid "help_newsletter_search_widget"
 msgstr ""
 "If you register a search, the results of the search will be appended to the "
 "list of documents manually chosen."
-
-# # Documents labels
-#, fuzzy
-#~ msgid "action_delete"
-#~ msgstr "Send the newsletter"

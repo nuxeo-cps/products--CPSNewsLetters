@@ -67,8 +67,3 @@ msgid "help_newsletter_search_widget"
 msgstr ""
 "Si vous enregistrez une recherche, les documents remontés par cette "
 "recherche seront ajoutés à la liste des documents choisis manuellement."
-
-# # Documents labels
-#, fuzzy
-#~ msgid "action_delete"
-#~ msgstr "Envoyer la lettre d'information"
