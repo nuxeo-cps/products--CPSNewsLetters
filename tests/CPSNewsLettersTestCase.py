@@ -30,8 +30,10 @@ class CPSNewsLettersInstaller(CPSTestCase.CPSInstaller):
                                                   '',
                                                   'CPSNewsLetters.install',
                                                   'install')
-        portal._setObject('cpsnewsletters_installer', cpsnewsletters_installer)
-        portal.cpsnewsletters_installer()
+        if 'cpsnewsletters_installer' not in portal.objectIds():
+            portal._setObject('cpsnewsletters_installer',
+                              cpsnewsletters_installer)
+            portal.cpsnewsletters_installer()
 
 CPSTestCase.setupPortal(PortalInstaller=CPSNewsLettersInstaller)
 
