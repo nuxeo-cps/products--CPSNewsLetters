@@ -1,0 +1,52 @@
+# ##########################################################
+# ################# DON'T EDIT THIS FILE! ##################
+# ##########################################################
+# Gettext Message File for default.
+# Your Name <your@email>, Year
+msgid ""
+msgstr ""
+"Project-Id-Version: CPSNewsLetter\n"
+"POT-Creation-Date: 2004-06-04 19:36default\n"
+"PO-Revision-Date: 2004-09-30 16:24+0100\n"
+"Last-Translator: Fabio Nosari <fabnos@fastwebnet.it>\n"
+"Language-Team: Fabio Nosari <fabnos@fastwebnet.it>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-code: LL\n"
+"Language-name: Language\n"
+"Preferred-encodings: utf-8 latin1\n"
+"Domain: default\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+
+# # Documents labels
+msgid "label_newsletter_mailbody_footer"
+msgstr "Piè di pagina della lista di informazione"
+
+msgid "label_newsletter_mailbody_header"
+msgstr "Intestazione della lista di informazione"
+
+msgid "label_newsletter_results"
+msgstr "Documenti"
+
+# # Actions
+msgid "action_news_letter_sendmail"
+msgstr "Invia la lettera di informazione"
+
+# # Event labels
+msgid "label_newsletter_sendmail"
+msgstr "Lista di informazione"
+
+# # psm
+msgid "psm_newsletter_successfully_sent"
+msgstr "La lista di informazione è stata inviata con successo."
+
+# # Portal tyoes
+msgid "portal_type_CPS_News_Letter_title"
+msgstr "Lettera di informazione"
+
+msgid "portal_type_CPS_News_Letter_description"
+msgstr "Un oggetto di tipo \"Lettera di informazione\" consente l'invio di un documento per posta ad una lista di diffusione.<br>Grazie al collegamento «Ricerca attraverso le proprietà», l'utente ricerca contenuti attinenti la sua lettera di informazione in tutti gli oggetti del portale. <br>Una volta terminata la ricerca e selezionato/i quelli di suo interesse, questo/i saranno allegato/i al documento di informazione sotto forma di collegamenti."
+
