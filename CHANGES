@@ -6,7 +6,7 @@ New features:
 - First release of CPSNewsLetters
 Bug fixes:
 ~~~~~~~~~~
--
+- Keep state_var from the wf ref
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 - Scripts are as well kept from the wf reference too.
