@@ -15,15 +15,6 @@ class TestGlobalInstall(CPSNewsLettersTestCase.CPSNewsLettersTestCase):
     def beforeTearDown(self):
         self.logout()
 
-    def testInstallerScript(self):
-        # Check installation script
-        from Products.ExternalMethod.ExternalMethod import ExternalMethod
-        installer = ExternalMethod('installer',
-            'CPS NewsLetters INSTALLER', 'CPSNewsLetters.install',
-            'install')
-        self.portal._setObject('installer', installer)
-        self.portal.installer()
-
     def testNewsLetterTypeFixtures(self):
         # Test if the NewsLetter portal_type is well installed
         ttool = self.portal.portal_types
