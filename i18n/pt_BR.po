@@ -1,0 +1,46 @@
+# translation of en.po to Brazilian Portuguese pt_BR.po
+# Gettext Message File for default.
+# Your Name <your@email>, Year
+# Julien Anguenot <anguenot@nuxeo.com>, 2004.
+# ben, 2004.
+msgid ""
+msgstr ""
+"Project-Id-Version: pt-BR\n"
+"POT-Creation-Date: 2004-06-04 19:36default\n"
+"PO-Revision-Date: 2004-08-26 11:03-0300\n"
+"Last-Translator: Mario Olimpio de Menezes <mario@curiango.ipen.br>\n"
+"Language-Team: Portugues do Brasil <pt@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# # Documents labels
+msgid "label_newsletter_mailbody_footer"
+msgstr "Rodapé do boletim de notícias"
+
+msgid "label_newsletter_mailbody_header"
+msgstr "Cabeçalho do boletim de notícias"
+
+# # Documents labels
+msgid "label_newsletter_results"
+msgstr "Documentos"
+
+# # Documents labels
+msgid "action_news_letter_sendmail"
+msgstr "Enviar boletim de notícias"
+
+# # Documents labels
+msgid "label_newsletter_sendmail"
+msgstr "Boletim de Notícias"
+
+# # psm
+msgid "psm_newsletter_successfully_sent"
+msgstr "O boletim de notícias foi enviado com sucesso"
+
+# # Portal tyoes
+msgid "portal_type_CPS_News_Letter_title"
+msgstr "Boletim de Notícias"
+
+msgid "portal_type_CPS_News_Letter_description"
+msgstr ""
+"Um documento boletim de notícias onde você pode efetuar buscas de conteúdo."
