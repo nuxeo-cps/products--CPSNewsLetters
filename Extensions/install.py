@@ -26,7 +26,24 @@ Installer/Updater fot the CPSNewsLetters component.
 from zLOG import LOG, INFO, DEBUG
 
 from Products.CMFCore.utils import getToolByName
+from Products.CMFCore.CMFCorePermissions import View, ModifyPortalContent
+
+from Products.DCWorkflow.Transitions import TRIGGER_USER_ACTION
+
+from Products.CPSCore.CPSWorkflow import \
+     TRANSITION_INITIAL_PUBLISHING, TRANSITION_INITIAL_CREATE, \
+     TRANSITION_ALLOWSUB_CREATE, TRANSITION_ALLOWSUB_PUBLISHING, \
+     TRANSITION_BEHAVIOR_PUBLISHING, TRANSITION_BEHAVIOR_FREEZE, \
+     TRANSITION_BEHAVIOR_DELETE, TRANSITION_BEHAVIOR_MERGE, \
+     TRANSITION_ALLOWSUB_CHECKOUT, TRANSITION_INITIAL_CHECKOUT, \
+     TRANSITION_BEHAVIOR_CHECKOUT, TRANSITION_ALLOW_CHECKIN, \
+     TRANSITION_BEHAVIOR_CHECKIN, TRANSITION_ALLOWSUB_DELETE, \
+     TRANSITION_ALLOWSUB_MOVE, TRANSITION_ALLOWSUB_COPY
+
 from Products.CPSInstaller.CPSInstaller import CPSInstaller
+
+WebDavLockItem = 'WebDAV Lock items'
+WebDavUnlockItem = 'WebDAV Unlock items'
 
 SECTIONS_ID = 'sections'
 WORKSPACES_ID = 'workspaces'
@@ -125,12 +142,214 @@ class CPSNewsLettersInstaller(CPSInstaller):
         self.allowContentTypes(types, 'Workspace')
 
     def installNewsLetterWorkflow(self):
-        """Install the newsletter section workflow type
-        """
+        wfdef = {'wfid': 'newsletter_wf',
+                 'permissions': (View, ModifyPortalContent,
+                                 WebDavLockItem, WebDavUnlockItem,),
+                 'state_var': 'review_state',
+                 }
 
-        from Products.CPSNewsLetters.Workflows.NewsLetterWorkflow import \
-             newsletterWorkflowInstall
-        newsletterWorkflowInstall(self.context)
+        wfstates = {
+            'pending': {
+                'title': 'Waiting for reviewer',
+                'transitions':('accept', 'reject'),
+                 'permissions': {View: ('SectionReviewer', 'SectionManager',
+                                        'Manager'),
+                                 ModifyPortalContent: ('SectionReviewer',
+                                        'SectionManager', 'Manager'),
+                                 WebDavLockItem: ('SectionReviewer',
+                                        'SectionManager', 'Manager'),
+                                 WebDavUnlockItem: ('SectionReviewer',
+                                        'SectionManager', 'Manager')},
+            },
+            'published': {
+                'title': 'Public',
+                'transitions': ('unpublish', 'cut_copy_paste',
+                                'sub_publishing', 'newsletter_sendmail',),
+                'permissions': {View: ('SectionReader', 'SectionReviewer',
+                                       'SectionManager', 'Manager'),
+                                ModifyPortalContent: ('Manager',),
+                                WebDavLockItem: ('Manager',),
+                                WebDavUnlockItem: ('Manager',)},
+            },
+        }
+
+        wftransitions = {
+            'publish': {
+                'title': 'Member publishes directly',
+                'new_state_id': 'published',
+                'transition_behavior': (TRANSITION_INITIAL_PUBLISHING,
+                                        TRANSITION_BEHAVIOR_FREEZE,
+                                        TRANSITION_BEHAVIOR_MERGE),
+                'clone_allowed_transitions': None,
+                'after_script_name': '',
+                'props': {'guard_permissions': '',
+                          'guard_roles': 'Manager; SectionManager; '
+                                         'SectionReviewer',
+                          'guard_expr': ''},
+            },
+            'cut_copy_paste': {
+                'title': 'Cut/Copy/Paste',
+                'new_state_id': '',
+                'transition_behavior': (TRANSITION_ALLOWSUB_DELETE,
+                                        TRANSITION_ALLOWSUB_MOVE,
+                                        TRANSITION_ALLOWSUB_COPY),
+                'clone_allowed_transitions': None,
+                'trigger_type': TRIGGER_USER_ACTION,
+                'actbox_name': '',
+                'actbox_category': '',
+                'actbox_url': '',
+                'props': {'guard_permissions': '',
+                          'guard_roles': 'Manager; SectionManager; '
+                                        'SectionReviewer',
+                          'guard_expr': ''},
+            },
+            'submit': {
+                'title': 'Member requests publishing',
+                'new_state_id': 'pending',
+                'transition_behavior': (TRANSITION_INITIAL_PUBLISHING,
+                                        TRANSITION_BEHAVIOR_FREEZE),
+                'clone_allowed_transitions': None,
+                'after_script_name': '',
+                'actbox_name': '',
+                'actbox_category': '',
+                'actbox_url': '',
+                'props': {'guard_permissions': '',
+                          'guard_roles': 'Manager; Member',
+                          'guard_expr': ''},
+            },
+            'accept': {
+                'title': 'Reviewer accepts publishing',
+                'new_state_id': 'published',
+                'transition_behavior': (TRANSITION_BEHAVIOR_MERGE,),
+                'clone_allowed_transitions': None,
+                'after_script_name': '',
+                'trigger_type': TRIGGER_USER_ACTION,
+                'actbox_name': 'action_accept',
+                'actbox_category': 'workflow',
+                'actbox_url': '%(content_url)s/content_accept_form',
+                'props': {'guard_permissions': '',
+                          'guard_roles': 'Manager; SectionManager; '
+                                         'SectionReviewer',
+                          'guard_expr': ''},
+            },
+            'reject': {
+                'title': 'Reviewer rejects publishing',
+                'new_state_id': '',
+                'transition_behavior': (TRANSITION_BEHAVIOR_DELETE,),
+                'clone_allowed_transitions': None,
+                'trigger_type': TRIGGER_USER_ACTION,
+                'actbox_name': 'action_reject',
+                'actbox_category': 'workflow',
+                'actbox_url': '%(content_url)s/content_reject_form',
+                'props': {'guard_permissions': '',
+                          'guard_roles': 'Manager; SectionManager; '
+                                         'SectionReviewer',
+                          'guard_expr': ''},
+            },
+            'unpublish': {
+                'title': 'Reviewer removes content from publication',
+                'new_state_id': '',
+                'transition_behavior': (TRANSITION_BEHAVIOR_DELETE,),
+                'clone_allowed_transitions': None,
+                'trigger_type': TRIGGER_USER_ACTION,
+                'actbox_name': 'action_un_publish',
+                'actbox_category': 'workflow',
+                'actbox_url': '%(content_url)s/content_unpublish_form',
+                'props': {'guard_permissions': '',
+                          'guard_roles': 'Manager; SectionManager; '
+                                         'SectionReviewer',
+                          'guard_expr': ''},
+            },
+            'sub_publishing': {
+                'title': 'Allow publishing of subdocuments',
+                'new_state_id': '',
+                'transition_behavior': (TRANSITION_ALLOWSUB_PUBLISHING,),
+                'clone_allowed_transitions': None,
+                'trigger_type': TRIGGER_USER_ACTION,
+                'props': {'guard_permissions': '',
+                          'guard_roles': 'Manager; SectionManager; '
+                                         'SectionReviewer; SectionReader',
+                          'guard_expr': ''},
+            },
+            'newsletter_sendmail' : {
+                'title':'Silent transition',
+                'description':'',
+                'new_state_id':'',
+                'transition_behavior':(),
+                'clone_allowed_transitions':None,
+                'trigger_type':TRIGGER_USER_ACTION,
+                'actbox_name':'action_news_letter_sendmail',
+                'actbox_category':'workflow',
+                'actbox_url':'%(content_url)s/newsletter_sendmail',
+                'props':{'guard_permissions': '',
+                         'guard_roles': 'Manager; SectionManager; \
+                         SectionReviewer; Owner',
+                         'guard_expr': ''},
+            },
+        }
+
+        wfscripts = {
+        }
+
+        wfvariables = {
+            'action': {
+                'description': 'The last transition',
+                'default_expr': 'transition/getId|nothing',
+                'for_status': 1,
+                'update_always': 1,
+            },
+            'actor': {
+                'description': 'The ID of the user who performed',
+                'default_expr': 'user/getId',
+                'for_status': 1,
+                'update_always': 1,
+            },
+            'comments': {
+                'description': 'Comments about the last transition',
+                'default_expr': "python:state_change.kwargs.get('comment', '')",
+                'for_status': 1,
+                'update_always': 1,
+            },
+            'review_history': {
+                'description': 'Provides access to workflow history',
+                'default_expr': 'state_change/getHistory',
+                'props': {'guard_permissions': '',
+                          'guard_roles': 'Manager; SectionManager; '
+                                         'SectionReviewer',
+                          'guard_expr': ''}
+            },
+            'language_revs': {
+                'description': 'The language revisions of the proxy',
+                'default_expr': 'state_change/getLanguageRevisions',
+                'for_status': 1,
+                'update_always': 1,
+            },
+            'time': {
+                'description': 'Time of the last transition',
+                'default_expr': 'state_change/getDateTime',
+                'for_status': 1,
+                'update_always': 1,
+                'for_catalog': 1,
+            },
+            'dest_container': {
+                'description': 'Destination container for the last '
+                                'paste/publish',
+                'default_expr': "python:state_change.kwargs.get("
+                                "'dest_container', '')",
+                'for_status': 1,
+                'update_always': 1,
+            },
+        }
+        self.verifyWorkflow(wfdef, wfstates, wftransitions,
+                     wfscripts, wfvariables)
+
+    #def installNewsLetterWorkflow(self):
+    #    """Install the newsletter section workflow type
+    #    """
+    #
+    #    from Products.CPSNewsLetters.Workflows.NewsLetterWorkflow import \
+    #         newsletterWorkflowInstall
+    #    newsletterWorkflowInstall(self.portal.this())
 
     def updateWorkflowAssociations(self):
         """Update workflow associations for newsletter types
