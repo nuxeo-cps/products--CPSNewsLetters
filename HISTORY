@@ -1,4 +1,20 @@
 *******************************************
+** CPSNewsLetters V0.1.1 [R1 build 2004/06/18-18:13 by anguenot]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- NewsLetterWorkflows : the reference workflow was modified while using it to create the NewsLetterWorkflow. deep copy problems thus I'm cloning the reference workflow and then delete the clone
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
 ** CPSNewsLetters V0.1.0 [R1 build 2004/06/17-20:19 by anguenot]
 
 Requires:
