@@ -1,0 +1,5 @@
+$Id$
+
+o Integration of CPSNavigation ZODB Widget to look for document (Ben)
+o Ability to whether or not the newsletter is sent directly at publishing time or it should wait for a manual action
+
