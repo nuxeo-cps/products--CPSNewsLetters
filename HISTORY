@@ -1,4 +1,20 @@
 *******************************************
+** CPSNewsLetters V0.3.0 [R1 build 2004/10/15-15:35 by anguenot]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Fix the internal links widget problem with base_url.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Dedicated widgets for Newsletter internal link
+
+*******************************************
 ** CPSNewsLetters V0.2.0 [R1 build 2004/09/03-13:37 by ben]
 
 Requires:
