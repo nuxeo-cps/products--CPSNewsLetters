@@ -54,6 +54,7 @@ class CPSNewsLettersInstaller(CPSInstaller):
         self.resetSkinCache()
         self.setupTranslations()
         self.installSchemas()
+        self.verifyWidgets(self.portal.getCPSNewsLettersDocumentWidgets())
         self.installLayouts()
         self.installTypes()
         self.installNewsLetterWorkflow()
