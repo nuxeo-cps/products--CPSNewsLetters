@@ -26,6 +26,7 @@ newsletter_type = {
     'cps_display_as_document_in_listing': True,
     'schemas': ('metadata', 'common', 'newsletter'),
     'layouts': ('common', 'newsletter'),
+    'layout_clusters': ('metadata:metadata',),
     'flexible_layouts': (),
     'storage_methods': (),
     'actions': (
