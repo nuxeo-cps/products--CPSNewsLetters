@@ -1,0 +1,54 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: CPSNewsletter-de CPS-3.2.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-11-05 18:19default\n"
+"PO-Revision-Date: 2005-03-14 20:21+0100\n"
+"Last-Translator: Georg Hennemann <georg.hennemann@dhl.com>\n"
+"Language-Team: de <rheinland@dzug.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;"
+
+# # Documents labels
+msgid "label_newsletter_mailbody_footer"
+msgstr "Newsletter Fusszeile"
+
+msgid "label_newsletter_mailbody_header"
+msgstr "Newsletter Kopf"
+
+# # Documents labels
+msgid "label_newsletter_results"
+msgstr "Dokumente"
+
+# # Documents labels
+msgid "action_news_letter_sendmail"
+msgstr "Versenden des Newsletter"
+
+# # Documents labels
+msgid "label_newsletter_sendmail"
+msgstr "Newsletter"
+
+# # psm
+msgid "psm_newsletter_successfully_sent"
+msgstr "NewsLetter wurde erfolgreich versandt"
+
+# # Portal tyoes
+msgid "portal_type_CPS_News_Letter_title"
+msgstr "Newsletter"
+
+msgid "portal_type_CPS_News_Letter_description"
+msgstr "Ein Newsletter Dokument mit dem Sie nach Inhalten suchen können."
+
+# # Documents labels
+msgid "help_newsletter_search_widget"
+msgstr ""
+"Wenn Sie eine Suchabfrage registrieren, werden die Suchergebnisse an die Liste "
+"der  manuell ausgewählten Dokumente angefügt."
+
+# # Documents labels
+#, fuzzy
+#~ msgid "action_delete"
+#~ msgstr "LÃƒÂ¶schen"
