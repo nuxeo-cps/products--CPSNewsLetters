@@ -70,14 +70,13 @@ def newsletterWorkflowInstall(self):
     #
     # Transitions
     # We add one silent transition representing the mail sending
-
     #
 
     wf.transitions = wf_ref.transitions
-    try:
-        wf.transitions.addTransition('newsletter_sendmail')
-    except:
-        pass
+
+    new_transition_id = 'newsletter_sendmail'
+    if wf_ref.transitions.get(new_transition_id) is None:
+        wf.transitions.addTransition(new_transition_id)
 
     t = wf.transitions.get('newsletter_sendmail')
     t.setProperties(title='Silent transition',
@@ -100,3 +99,10 @@ def newsletterWorkflowInstall(self):
     #
 
     wf.variables = wf_ref.variables
+
+    #
+    # Scripts
+    # No additional scripts
+    #
+
+    wf.scripts = wf_ref.scripts
