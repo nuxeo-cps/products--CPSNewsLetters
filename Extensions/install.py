@@ -171,7 +171,7 @@ class CPSNewsLettersInstaller(CPSInstaller):
             subtool.manage_addEventType('Section',
                                         'workflow_newsletter_sendmail',
                                         'label_newsletter_sendmail')
-            subtool.addRenderedPortalType('NewsLetter')
+            subtool.addRenderedEvent('workflow_newsletter_sendmail')
         else:
             LOG(":: CPSNewsLetters ::", DEBUG,
                 "CPSSubscriptions is not installed.",
