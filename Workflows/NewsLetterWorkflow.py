@@ -48,7 +48,8 @@ def newsletterWorkflowInstall(self):
     # HACK: objects are unowned after a manage_clone, it seems, and
     # some tests don't like that (CPSIO currently).
     # FIXME: find a complete and better solution.
-    wf.scripts.mail_notification._owner = None
+    if getattr(wf.scripts, 'mail_notification', None) != None:
+        wf.scripts.mail_notification._owner = None
 
     #
     # States
