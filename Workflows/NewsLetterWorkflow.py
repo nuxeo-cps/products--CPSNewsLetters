@@ -40,27 +40,12 @@ def newsletterWorkflowInstall(self):
     if wfid in wfids:
         wftool.manage_delObjects([wfid])
 
-    wftool.manage_addWorkflow(id=wfid,
-                              workflow_type='cps_workflow (Web-configurable workflow for CPS)')
-
-    wf = wftool[wfid]
-
     wf_ref_id = 'section_content_wf'
 
-    # We gotta do that since the deepcopy doesn't work.
-    # Or at lease I don't know ho to use it with Zope
-    # Acquisition wrapper problems
-    x = wftool.manage_copyObjects([wf_ref_id])
-    wftool.manage_pasteObjects(x)
+    # copy the reference workflow.
+    wftool.manage_clone(wftool[wf_ref_id], wfid)
 
-    wf_ref = wftool['copy_of_'+wf_ref_id]
-
-    #
-    # Permissions
-    # We keep the same as the ref workflow
-    #
-
-    wf.permissions = wf_ref.permissions
+    wf = wftool[wfid]
 
     #
     # States
@@ -68,19 +53,16 @@ def newsletterWorkflowInstall(self):
     # within the published state
     #
 
-    wf.states = wf_ref.states
     s = wf.states.get('published')
     s.transitions = s.transitions + ('newsletter_sendmail',)
 
     #
     # Transitions
-    # We add one silent transition representing the mail sending
+    # We add one silent transition used for sending a relative event.
     #
 
-    wf.transitions = wf_ref.transitions
-
     new_transition_id = 'newsletter_sendmail'
-    if wf_ref.transitions.get(new_transition_id) is None:
+    if wf.transitions.get(new_transition_id) is None:
         wf.transitions.addTransition(new_transition_id)
 
     t = wf.transitions.get('newsletter_sendmail')
@@ -97,24 +79,3 @@ def newsletterWorkflowInstall(self):
                            'guard_roles':'Manager; SectionManager; \
                            SectionReviewer; Owner',
                            'guard_expr':''},)
-
-    #
-    # Variables
-    # We keep the same as the ref workflow
-    #
-
-    wf.variables = wf_ref.variables
-    wf.state_var = wf_ref.state_var
-
-    #
-    # Scripts
-    # No additional scripts
-    #
-
-    wf.scripts = wf_ref.scripts
-
-    #
-    # Cleanups
-    #
-
-    wftool.manage_delObjects(['copy_of_'+wf_ref_id])
