@@ -3,7 +3,8 @@ Requires:
 -
 New features:
 ~~~~~~~~~~~~~
--
+- It is possible now to register a set of search criteria into a newsletter => the documents 
+that match these criteria will be apended at the list of documents manually chosen.
 Bug fixes:
 ~~~~~~~~~~
 -
