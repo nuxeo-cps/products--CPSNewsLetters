@@ -9,4 +9,4 @@ Bug fixes:
 -
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
--
+- getattr() mail_notification on the NewsLetters_workfflow script for unit tests
