@@ -1,6 +1,6 @@
 Requires:
 ~~~~~~~~~
--
+- CPSSubscriptions > 0.9.1
 New features:
 ~~~~~~~~~~~~~
 - First release of CPSNewsLetters
@@ -12,3 +12,4 @@ New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 - Scripts are as well kept from the wf reference too.
 - Some cleaning on the workflow script
+- Uses the new API from CPSSubscriptions for registering the NewsLetter portal_type within the portal_type for which we are going to render the content type and put it into the notification email body.
