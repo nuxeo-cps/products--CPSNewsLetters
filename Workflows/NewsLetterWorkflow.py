@@ -24,20 +24,18 @@ The idea in here is to have one more transition for being able to send an event
 to the event_service tool and then taking actions through CPSSubscriptions
 """
 
-from Products.DCWorkflow.Transitions import \
-     TRIGGER_USER_ACTION
+from Products.DCWorkflow.Transitions import TRIGGER_USER_ACTION
 
 def newsletterWorkflowInstall(self):
     """Installs the workflow for the NewsLetter Type
     """
 
+    wfid = 'newsletter_wf'
+
     portal = self.portal_url.getPortalObject()
     wftool = portal.portal_workflow
 
-    wfids = wftool.objectIds()
-    wfid = 'newsletter_wf'
-
-    if wfid in wfids:
+    if wfid in wftool.objectIds():
         wftool.manage_delObjects([wfid])
 
     wf_ref_id = 'section_content_wf'
@@ -75,7 +73,7 @@ def newsletterWorkflowInstall(self):
                     actbox_name='action_news_letter_sendmail',
                     actbox_category='workflow',
                     actbox_url='%(content_url)s/newsletter_sendmail',
-                    props={'guard_permissions':'',
-                           'guard_roles':'Manager; SectionManager; \
-                           SectionReviewer; Owner',
-                           'guard_expr':''},)
+                    props={'guard_permissions': '',
+                           'guard_roles': 'Manager; SectionManager; \
+                                           SectionReviewer; Owner',
+                           'guard_expr': ''},)
