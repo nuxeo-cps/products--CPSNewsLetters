@@ -6,7 +6,7 @@ New features:
 -
 Bug fixes:
 ~~~~~~~~~~
--
+- fix: translation are utf8 instead of 8859-15
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 - Compatibility with Zope-2.6.x / python2.1 (boolean)
