@@ -26,7 +26,7 @@ Installer/Updater fot the CPSNewsLetters component.
 from zLOG import LOG, INFO, DEBUG
 
 from Products.CMFCore.utils import getToolByName
-from Products.CMFCore.CMFCorePermissions import View, ModifyPortalContent
+from Products.CMFCore.permissions import View, ModifyPortalContent
 
 from Products.DCWorkflow.Transitions import TRIGGER_USER_ACTION
 
