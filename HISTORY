@@ -1,4 +1,21 @@
 *******************************************
+** CPSNewsLetters V0.4.0 [R1 build 2004/12/21-09:23 by ben]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- It is possible now to register a set of search criteria into a newsletter => the documents 
+that match these criteria will be apended at the list of documents manually chosen.
+Bug fixes:
+~~~~~~~~~~
+- Full definition of the newsletter_wf in here since the test env doesn't like the manage_clone operation with the workflow tool it seems.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
 ** CPSNewsLetters V0.3.0 [R1 build 2004/10/15-15:35 by anguenot]
 
 Requires:
