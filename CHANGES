@@ -7,7 +7,7 @@ New features:
 that match these criteria will be apended at the list of documents manually chosen.
 Bug fixes:
 ~~~~~~~~~~
--
+- Full definition of the newsletter_wf in here since the test env doesn't like the manage_clone operation with the workflow tool it seems.
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -
