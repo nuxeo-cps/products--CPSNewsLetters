@@ -24,6 +24,12 @@ The idea in here is to have one more transition for being able to send an event
 to the event_service tool and then taking actions through CPSSubscriptions
 """
 
+#
+# XXX manage_clone with workflow tool fuck up the test environement
+# Thus this code is not called anymore for the moment.
+# A full definition of the newletter_wf is within the installer of this product.
+#
+
 from Products.DCWorkflow.Transitions import TRIGGER_USER_ACTION
 
 def newsletterWorkflowInstall(self):
