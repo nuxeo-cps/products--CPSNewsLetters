@@ -7,6 +7,8 @@ New features:
 Bug fixes:
 ~~~~~~~~~~
 - fix: translation are utf8 instead of 8859-15
+- fix: unable to edit header and footer as it is impossible to have
+  2 rich text widget on the same page, fix use Text Widget
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 - Compatibility with Zope-2.6.x / python2.1 (boolean)
