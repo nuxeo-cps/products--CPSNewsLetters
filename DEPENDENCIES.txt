@@ -3,3 +3,4 @@
 # CPS --------------------
 CPSInstaller >= 0.7.0
 CPSSubscriptions >= 0.9.0
+CPSSchemas
