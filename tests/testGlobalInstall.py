@@ -38,7 +38,7 @@ class TestGlobalInstall(CPSNewsLettersTestCase.CPSNewsLettersTestCase):
         subscriptions_tool = getToolByName(self.portal, 'portal_subscriptions')
 
         if subscriptions_tool is not None:
-            self.assertEqual('NewsLetter' in subscriptions_tool.getRenderedPortalTypes(), 1)
+            self.assertEqual('workflow_newsletter_sendmail' in subscriptions_tool.getRenderedEvents(), 1)
 
 def test_suite():
     suite = unittest.TestSuite()
