@@ -30,7 +30,7 @@ from Products.CMFCore.CMFCorePermissions import View, ModifyPortalContent
 
 from Products.DCWorkflow.Transitions import TRIGGER_USER_ACTION
 
-from Products.CPSCore.CPSWorkflow import \
+from Products.CPSWorkflow.transitions import \
      TRANSITION_INITIAL_PUBLISHING, TRANSITION_INITIAL_CREATE, \
      TRANSITION_ALLOWSUB_CREATE, TRANSITION_ALLOWSUB_PUBLISHING, \
      TRANSITION_BEHAVIOR_PUBLISHING, TRANSITION_BEHAVIOR_FREEZE, \
