@@ -45,6 +45,11 @@ def newsletterWorkflowInstall(self):
 
     wf = wftool[wfid]
 
+    # HACK: objects are unowned after a manage_clone, it seems, and
+    # some tests don't like that (CPSIO currently).
+    # FIXME: find a complete and better solution.
+    wf.scripts.mail_notification._owner = None
+
     #
     # States
     # We add the newsletter_sendmail transition as possible transition
