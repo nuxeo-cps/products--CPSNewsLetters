@@ -48,7 +48,14 @@ def newsletterWorkflowInstall(self):
     wf = wftool[wfid]
 
     wf_ref_id = 'section_content_wf'
-    wf_ref = wftool[wf_ref_id]
+
+    # We gotta do that since the deepcopy doesn't work.
+    # Or at lease I don't know ho to use it with Zope
+    # Acquisition wrapper problems
+    x = wftool.manage_copyObjects([wf_ref_id])
+    wftool.manage_pasteObjects(x)
+
+    wf_ref = wftool['copy_of_'+wf_ref_id]
 
     #
     # Permissions
@@ -107,3 +114,9 @@ def newsletterWorkflowInstall(self):
     #
 
     wf.scripts = wf_ref.scripts
+
+    #
+    # Cleanups
+    #
+
+    wftool.manage_delObjects(['copy_of_'+wf_ref_id])
