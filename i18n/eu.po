@@ -1,0 +1,62 @@
+# translation of CPSNewsLetters_en.po to Euskara
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# Gettext Message File for default.
+# Your Name <your@email>, Year
+# ben, 2004.
+# Julien Anguenot <anguenot@nuxeo.com>, 2004.
+# Aitzol Naberan Burgaña <anaberan@codesyntax.com>, 2004.
+msgid ""
+msgstr ""
+"Project-Id-Version: CPSNewsLetters_en\n"
+"POT-Creation-Date: 2004-06-04 19:36default\n"
+"PO-Revision-Date: 2004-09-24 09:46+0200\n"
+"Last-Translator: Aitzol Naberan Burgaña <anaberan@codesyntax.com>\n"
+"Language-Team: Euskara <eu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-code: eu\n"
+"Language-name: Euskara\n"
+"Preferred-encodings: utf-8 latin1\n"
+"Domain: default\n"
+"X-Generator: KBabel 1.3\n"
+
+# # Documents labels
+msgid "label_newsletter_mailbody_footer"
+msgstr "News letter footer"
+
+msgid "label_newsletter_mailbody_header"
+msgstr "News letter header"
+
+# # Documents labels
+msgid "label_newsletter_results"
+msgstr "Documents"
+
+# # Documents labels
+msgid "action_news_letter_sendmail"
+msgstr "Send the newsletter"
+
+# # Documents labels
+msgid "label_newsletter_sendmail"
+msgstr "NewsLetter"
+
+# # psm
+msgid "psm_newsletter_successfully_sent"
+msgstr "NewsLetter has been successfully sent"
+
+# # Portal tyoes
+msgid "portal_type_CPS_News_Letter_title"
+msgstr "News Letter"
+
+msgid "portal_type_CPS_News_Letter_description"
+msgstr "A news letter document where you can perform content research."
+
