@@ -19,11 +19,17 @@ class CPSNewsLettersInstaller(CPSTestCase.CPSInstaller):
         CPSTestCase.CPSInstaller.addPortal(self, id)
         portal = getattr(self.app, id)
 
+        if not hasattr(portal, 'cpnewsletters_installer'):
+            self.setupCPSNewsLetters(portal)
+
+    # XXX: this may not be needed anymore with a proper product installation
+    # framework
+    def setupCPSNewsLetters(self, portal):
         # Install the CPSNewsLetters product
         cpsnewsletters_installer = ExternalMethod('cpnewsletters_installer',
-                                                    '',
-                                                    'CPSNewsLetters.install',
-                                                    'install')
+                                                  '',
+                                                  'CPSNewsLetters.install',
+                                                  'install')
         portal._setObject('cpsnewsletters_installer', cpsnewsletters_installer)
         portal.cpsnewsletters_installer()
 
