@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: default\n"
-"POT-Creation-Date: 2004-06-04 19:23default\n"
+"POT-Creation-Date: 2004-06-04 19:36default\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Your Name <your@email>\n"
 "Language-Team: Name <email>\n"
@@ -24,6 +24,9 @@ msgid "label_newsletter_mailbody_footer"
 msgstr ""
 
 msgid "label_newsletter_mailbody_header"
+msgstr ""
+
+msgid "label_newsletter_results"
 msgstr ""
 
 # # Actions

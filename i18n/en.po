@@ -5,14 +5,15 @@
 # translation of en.po to
 # translation of en.po to
 # translation of en.po to
+# translation of en.po to
 # Gettext Message File for default.
 # Your Name <your@email>, Year
 # Julien Anguenot <anguenot@nuxeo.com>, 2004.
 msgid ""
 msgstr ""
 "Project-Id-Version: en\n"
-"POT-Creation-Date: 2004-06-04 19:23default\n"
-"PO-Revision-Date: 2004-06-04 19:23+0200\n"
+"POT-Creation-Date: 2004-06-04 19:36default\n"
+"PO-Revision-Date: 2004-06-04 19:36+0200\n"
 "Last-Translator: Julien Anguenot <anguenot@nuxeo.com>\n"
 "Language-Team:  <janguenot@nuxeo.com>\n"
 "MIME-Version: 1.0\n"
@@ -31,6 +32,10 @@ msgstr "News letter footer"
 
 msgid "label_newsletter_mailbody_header"
 msgstr "News letter header"
+
+# # Documents labels
+msgid "label_newsletter_results"
+msgstr "Documents"
 
 # # Documents labels
 msgid "action_news_letter_sendmail"

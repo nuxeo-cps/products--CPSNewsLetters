@@ -24,6 +24,9 @@ msgstr ""
 msgid "label_newsletter_mailbody_header"
 msgstr ""
 
+msgid "label_newsletter_results"
+msgstr ""
+
 ## Actions
 
 msgid "action_news_letter_sendmail"
