@@ -9,4 +9,5 @@ Bug fixes:
 -
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
--
+- Scripts are as well kept from the wf reference too.
+- Some cleaning on the workflow script
