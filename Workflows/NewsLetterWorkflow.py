@@ -24,8 +24,6 @@ The idea in here is to have one more transition for being able to send an event
 to the event_service tool and then taking actions through CPSSubscriptions
 """
 
-import os, sys
-
 from Products.DCWorkflow.Transitions import \
      TRIGGER_USER_ACTION
 

@@ -25,13 +25,7 @@ Installer/Updater fot the CPSNewsLetters component.
 
 from zLOG import LOG, INFO, DEBUG
 
-import os, sys
-
-from Products.ExternalMethod.ExternalMethod import ExternalMethod
-
 from Products.CMFCore.utils import getToolByName
-from Products.CMFCore.CMFCorePermissions import View, ModifyPortalContent, \
-     setDefaultRoles
 from Products.CPSInstaller.CPSInstaller import CPSInstaller
 
 SECTIONS_ID = 'sections'
