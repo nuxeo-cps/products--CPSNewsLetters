@@ -65,7 +65,7 @@ def newsletterWorkflowInstall(self):
 
     wf.states = wf_ref.states
     s = wf.states.get('published')
-    s.transitions = s.transitions + ('published',)
+    s.transitions = s.transitions + ('newsletter_sendmail',)
 
     #
     # Transitions
