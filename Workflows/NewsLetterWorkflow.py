@@ -99,6 +99,7 @@ def newsletterWorkflowInstall(self):
     #
 
     wf.variables = wf_ref.variables
+    wf.state_var = wf_ref.state_var
 
     #
     # Scripts
