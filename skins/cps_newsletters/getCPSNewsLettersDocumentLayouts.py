@@ -33,7 +33,7 @@ newsletter_layout = {
             },
         },
         'results': {
-            'type': 'InternalLinks Widget',
+           'type': 'CPS NewsLetter InternalLinks Widget',
             'data': {
                 'title': '',
                 'fields': ('results',),
