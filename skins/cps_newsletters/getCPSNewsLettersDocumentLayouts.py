@@ -3,6 +3,9 @@
 """Return the newsletters related layouts
 """
 
+True  = 1
+False = 0
+
 newsletter_layout = {
     'widgets': {
         'mailBodyFooter': {
