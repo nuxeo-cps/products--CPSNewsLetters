@@ -1,0 +1,19 @@
+*******************************************
+** CPSNewsLetters V0.1.0 [R1 build 2004/06/17-20:19 by anguenot]
+
+Requires:
+~~~~~~~~~
+- CPSSubscriptions > 0.9.1
+New features:
+~~~~~~~~~~~~~
+- First release of CPSNewsLetters
+Bug fixes:
+~~~~~~~~~~
+- Keep state_var from the wf ref
+- Bug fixes in transition published
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Scripts are as well kept from the wf reference too.
+- Some cleaning on the workflow script
+- Uses the new API from CPSSubscriptions for registering the workflow_newsletter_sendmail within the event_id for which we are going to render the content type and put it into the notification email body.
+
