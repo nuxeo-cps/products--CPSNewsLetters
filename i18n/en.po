@@ -31,10 +31,10 @@ msgstr ""
 
 # # Documents labels
 msgid "label_newsletter_mailbody_footer"
-msgstr "News letter footer"
+msgstr "Newsletter footer"
 
 msgid "label_newsletter_mailbody_header"
-msgstr "News letter header"
+msgstr "Newsletter header"
 
 # # Documents labels
 msgid "label_newsletter_results"
@@ -50,14 +50,14 @@ msgstr "NewsLetter"
 
 # # psm
 msgid "psm_newsletter_successfully_sent"
-msgstr "NewsLetter has been successfully sent"
+msgstr "Newsletter has been successfully sent"
 
 # # Portal tyoes
 msgid "portal_type_CPS_News_Letter_title"
-msgstr "News Letter"
+msgstr "Newsletter"
 
 msgid "portal_type_CPS_News_Letter_description"
-msgstr "A news letter document where you can perform content research."
+msgstr "A newsletter document where you can perform content research."
 
 # # Documents labels
 msgid "help_newsletter_search_widget"

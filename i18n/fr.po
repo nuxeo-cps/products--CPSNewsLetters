@@ -32,10 +32,10 @@ msgstr ""
 
 # # Documents labels
 msgid "label_newsletter_mailbody_footer"
-msgstr "Pied de page de la liste d'information"
+msgstr "Pied de page de la lettre d'information"
 
 msgid "label_newsletter_mailbody_header"
-msgstr "Haut de page de la liste d'information"
+msgstr "Haut de page de la lettre d'information"
 
 # # Documents labels
 msgid "label_newsletter_results"
@@ -47,11 +47,11 @@ msgstr "Envoyer la lettre d'information"
 
 # # Documents labels
 msgid "label_newsletter_sendmail"
-msgstr "Liste d'information"
+msgstr "Lettre d'information"
 
 # # psm
 msgid "psm_newsletter_successfully_sent"
-msgstr "Liste d'information envoyée avec succès."
+msgstr "Lettre d'information envoyée avec succès."
 
 # # Portal tyoes
 msgid "portal_type_CPS_News_Letter_title"
@@ -59,8 +59,8 @@ msgstr "Lettre d'information"
 
 msgid "portal_type_CPS_News_Letter_description"
 msgstr ""
-"Une lettre d'information est un document ou vous pouvez réaliser une "
-"recherche de contenu sur le site pour envoi ultérieure."
+"Une lettre d'information est un document qui vous permet de réaliser une "
+"recherche de contenu sur le site pour envoi ultérieur."
 
 # # Documents labels
 msgid "help_newsletter_search_widget"

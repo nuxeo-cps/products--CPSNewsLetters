@@ -21,7 +21,7 @@ __author__ = "Julien Anguenot <mailto:ja@nuxeo.com>"
 
 """ CPS NewsLetters component
 
-This component provides News Letters content type and register itself
+This component provides NewsLetters content type and register itself
 within the portal_subscriptions tool if CPSSubscriptions is installed.
 """
 
