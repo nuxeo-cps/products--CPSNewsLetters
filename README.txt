@@ -4,7 +4,7 @@
 
                $Id$
 
-CPSNewsLetters provides a news letter content type ready to use within CPS3.
+CPSNewsLetters provides a newsletter content type ready to use within CPS3.
 
 You need CPSSubscriptions with this product if you want to take advantage of
 the subscriptions features offered by CPSSubscriptions. 
