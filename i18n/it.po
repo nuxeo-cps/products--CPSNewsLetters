@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CPSNewsLetter\n"
-"POT-Creation-Date: 2004-06-04 19:36default\n"
+"POT-Creation-Date: 2004-11-05 16:13default\n"
 "PO-Revision-Date: 2004-09-30 16:24+0100\n"
 "Last-Translator: Fabio Nosari <fabnos@fastwebnet.it>\n"
 "Language-Team: Fabio Nosari <fabnos@fastwebnet.it>\n"
@@ -20,6 +20,54 @@ msgstr ""
 "Domain: default\n"
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
+
+# # Actions
+#.   <input name="del_item" onclick="delete_items()" type="button" value="action_delete">
+#.         <input name="move_up" onclick="move_up_items()" type="button" value="button_move_up">
+#.         <input name="move_down" onclick="move_down_items()" type="button" value="button_move_down">
+#.         <input name="search_item" onclick="open_search_dialog()" type="button" value="button_search"><br />
+#.         <textarea style="width: 90%;visibility:hidden" cols="2" content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" />
+#.       </input></input></input></input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+#, fuzzy
+msgid "action_delete"
+msgstr "Invia la lettera di informazione"
+
+#.   <input name="move_down" onclick="move_down_items()" type="button" value="button_move_down">
+#.         <input name="search_item" onclick="open_search_dialog()" type="button" value="button_search"><br />
+#.         <textarea style="width: 90%;visibility:hidden" cols="2" content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" />
+#.       </input></input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_move_down"
+msgstr ""
+
+#.   <input name="move_up" onclick="move_up_items()" type="button" value="button_move_up">
+#.         <input name="move_down" onclick="move_down_items()" type="button" value="button_move_down">
+#.         <input name="search_item" onclick="open_search_dialog()" type="button" value="button_search"><br />
+#.         <textarea style="width: 90%;visibility:hidden" cols="2" content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" />
+#.       </input></input></input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_move_up"
+msgstr ""
+
+#.   <input name="search_item" onclick="open_search_dialog()" type="button" value="button_search"><br />
+#.         <textarea style="width: 90%;visibility:hidden" cols="2" content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" />
+#.       </input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_search"
+msgstr ""
 
 # # Documents labels
 msgid "label_newsletter_mailbody_footer"
@@ -48,5 +96,15 @@ msgid "portal_type_CPS_News_Letter_title"
 msgstr "Lettera di informazione"
 
 msgid "portal_type_CPS_News_Letter_description"
-msgstr "Un oggetto di tipo \"Lettera di informazione\" consente l'invio di un documento per posta ad una lista di diffusione.<br>Grazie al collegamento «Ricerca attraverso le proprietà», l'utente ricerca contenuti attinenti la sua lettera di informazione in tutti gli oggetti del portale. <br>Una volta terminata la ricerca e selezionato/i quelli di suo interesse, questo/i saranno allegato/i al documento di informazione sotto forma di collegamenti."
+msgstr ""
+"Un oggetto di tipo \"Lettera di informazione\" consente l'invio di un "
+"documento per posta ad una lista di diffusione.<br>Grazie al collegamento "
+"«Ricerca attraverso le proprietà», l'utente ricerca contenuti attinenti la "
+"sua lettera di informazione in tutti gli oggetti del portale. <br>Una volta "
+"terminata la ricerca e selezionato/i quelli di suo interesse, questo/i "
+"saranno allegato/i al documento di informazione sotto forma di collegamenti."
 
+# # Event labels
+#, fuzzy
+msgid "help_newsletter_search_widget"
+msgstr "Lista di informazione"

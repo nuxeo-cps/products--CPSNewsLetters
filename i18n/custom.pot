@@ -49,3 +49,8 @@ msgstr ""
 
 msgid "portal_type_CPS_News_Letter_description"
 msgstr ""
+
+## help messages
+
+msgid "help_newsletter_search_widget"
+msgstr ""

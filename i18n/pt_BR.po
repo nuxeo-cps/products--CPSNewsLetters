@@ -6,13 +6,61 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pt-BR\n"
-"POT-Creation-Date: 2004-06-04 19:36default\n"
+"POT-Creation-Date: 2004-11-05 16:13default\n"
 "PO-Revision-Date: 2004-08-26 11:03-0300\n"
 "Last-Translator: Mario Olimpio de Menezes <mario@curiango.ipen.br>\n"
 "Language-Team: Portugues do Brasil <pt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+# # Documents labels
+#.   <input name="del_item" onclick="delete_items()" type="button" value="action_delete">
+#.         <input name="move_up" onclick="move_up_items()" type="button" value="button_move_up">
+#.         <input name="move_down" onclick="move_down_items()" type="button" value="button_move_down">
+#.         <input name="search_item" onclick="open_search_dialog()" type="button" value="button_search"><br />
+#.         <textarea style="width: 90%;visibility:hidden" cols="2" content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" />
+#.       </input></input></input></input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+#, fuzzy
+msgid "action_delete"
+msgstr "Enviar boletim de notícias"
+
+#.   <input name="move_down" onclick="move_down_items()" type="button" value="button_move_down">
+#.         <input name="search_item" onclick="open_search_dialog()" type="button" value="button_search"><br />
+#.         <textarea style="width: 90%;visibility:hidden" cols="2" content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" />
+#.       </input></input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_move_down"
+msgstr ""
+
+#.   <input name="move_up" onclick="move_up_items()" type="button" value="button_move_up">
+#.         <input name="move_down" onclick="move_down_items()" type="button" value="button_move_down">
+#.         <input name="search_item" onclick="open_search_dialog()" type="button" value="button_search"><br />
+#.         <textarea style="width: 90%;visibility:hidden" cols="2" content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" />
+#.       </input></input></input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_move_up"
+msgstr ""
+
+#.   <input name="search_item" onclick="open_search_dialog()" type="button" value="button_search"><br />
+#.         <textarea style="width: 90%;visibility:hidden" cols="2" content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" />
+#.       </input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_search"
+msgstr ""
 
 # # Documents labels
 msgid "label_newsletter_mailbody_footer"
@@ -44,3 +92,8 @@ msgstr "Boletim de Notícias"
 msgid "portal_type_CPS_News_Letter_description"
 msgstr ""
 "Um documento boletim de notícias onde você pode efetuar buscas de conteúdo."
+
+# # Documents labels
+#, fuzzy
+msgid "help_newsletter_search_widget"
+msgstr "Boletim de Notícias"
