@@ -44,13 +44,3 @@ msgstr "Boletim de Notícias"
 msgid "portal_type_CPS_News_Letter_description"
 msgstr ""
 "Um documento boletim de notícias onde você pode efetuar buscas de conteúdo."
-
-# # Documents labels
-#, fuzzy
-msgid "help_newsletter_search_widget"
-msgstr "Boletim de Notícias"
-
-# # Documents labels
-#, fuzzy
-#~ msgid "action_delete"
-#~ msgstr "Enviar boletim de notícias"

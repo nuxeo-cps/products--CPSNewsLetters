@@ -55,13 +55,3 @@ msgstr ""
 "sua lettera di informazione in tutti gli oggetti del portale. <br>Una volta "
 "terminata la ricerca e selezionato/i quelli di suo interesse, questo/i "
 "saranno allegato/i al documento di informazione sotto forma di collegamenti."
-
-# # Event labels
-#, fuzzy
-msgid "help_newsletter_search_widget"
-msgstr "Lista di informazione"
-
-# # Actions
-#, fuzzy
-#~ msgid "action_delete"
-#~ msgstr "Invia la lettera di informazione"

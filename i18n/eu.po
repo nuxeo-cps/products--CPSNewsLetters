@@ -59,4 +59,3 @@ msgstr "News Letter"
 
 msgid "portal_type_CPS_News_Letter_description"
 msgstr "A news letter document where you can perform content research."
-
