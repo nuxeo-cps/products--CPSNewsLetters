@@ -1,4 +1,21 @@
 *******************************************
+** CPSNewsLetters V0.6.0 [R1 build 2005/04/11-08:48 by ben]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Made newsletter document type use the 'metadata' cluster instead of the
+  'metadata' layout.
+Bug fixes:
+~~~~~~~~~~
+- Removed warnings: replaces CMFCore.CMFCorePermissions by CMFCore.permissions.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
 ** CPSNewsLetters V0.5.0 [R1 build 2005/01/20-11:40 by ben]
 
 Requires:
