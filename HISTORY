@@ -1,4 +1,20 @@
 *******************************************
+** CPSNewsLetters V0.6.1 [R1 build 2005/06/02-11:55 by fguillaume]
+** SVN URL: https://svn.nuxeo.org/pub/CPSNewsLetters/trunk Revision: 22117
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Updated translations.
+
+*******************************************
 ** CPSNewsLetters V0.6.0 [R1 build 2005/04/11-08:48 by ben]
 
 Requires:
