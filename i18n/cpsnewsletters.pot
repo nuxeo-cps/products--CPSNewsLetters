@@ -1,12 +1,9 @@
-# ##########################################################
-# ################# DON'T EDIT THIS FILE! ##################
-# ##########################################################
 # Gettext Message File for default.
 # Your Name <your@email>, Year
 msgid ""
 msgstr ""
 "Project-Id-Version: default\n"
-"POT-Creation-Date: 2004-11-05 18:19default\n"
+"POT-Creation-Date: 2005-06-03 19:47default\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Your Name <your@email>\n"
 "Language-Team: Name <email>\n"
@@ -14,10 +11,43 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language-code: LL\n"
-"Language-name: Language\n"
+"Language-Code: LL\n"
+"Language-Name: Language\n"
 "Preferred-encodings: utf-8 latin1\n"
 "Domain: default\n"
+
+#.   <input type="button" name="move_down" value="button_move_down" onclick="move_down_items()">
+#.         <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
+#.         <textarea content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
+#.       </input></input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_move_down"
+msgstr ""
+
+#.   <input type="button" name="move_up" value="button_move_up" onclick="move_up_items()">
+#.         <input type="button" name="move_down" value="button_move_down" onclick="move_down_items()">
+#.         <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
+#.         <textarea content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
+#.       </input></input></input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_move_up"
+msgstr ""
+
+#.   <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
+#.         <textarea content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
+#.       </input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_search"
+msgstr ""
 
 # # Documents labels
 msgid "label_newsletter_mailbody_footer"
@@ -27,6 +57,15 @@ msgid "label_newsletter_mailbody_header"
 msgstr ""
 
 msgid "label_newsletter_results"
+msgstr ""
+
+msgid "label_nb_items"
+msgstr ""
+
+msgid "label_folder"
+msgstr ""
+
+msgid "label_search"
 msgstr ""
 
 # # Actions
@@ -41,7 +80,7 @@ msgstr ""
 msgid "psm_newsletter_successfully_sent"
 msgstr ""
 
-# # Portal tyoes
+# # Portal types
 msgid "portal_type_CPS_News_Letter_title"
 msgstr ""
 

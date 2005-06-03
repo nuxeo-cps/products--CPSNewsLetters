@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: en\n"
-"POT-Creation-Date: 2004-11-05 18:19default\n"
+"POT-Creation-Date: 2005-06-03 19:47default\n"
 "PO-Revision-Date: 2004-11-05 16:19+0100\n"
 "Last-Translator: \n"
 "Language-Team:  <fr@li.org>\n"
@@ -20,6 +20,39 @@ msgstr ""
 "Language-Name: English\n"
 "Domain: default\n"
 
+#.   <input type="button" name="move_down" value="button_move_down" onclick="move_down_items()">
+#.         <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
+#.         <textarea content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
+#.       </input></input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_move_down"
+msgstr "Move down"
+
+#.   <input type="button" name="move_up" value="button_move_up" onclick="move_up_items()">
+#.         <input type="button" name="move_down" value="button_move_down" onclick="move_down_items()">
+#.         <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
+#.         <textarea content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
+#.       </input></input></input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_move_up"
+msgstr "Move up"
+
+#.   <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
+#.         <textarea content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
+#.       </input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_search"
+msgstr "Search"
+
 # # Documents labels
 msgid "label_newsletter_mailbody_footer"
 msgstr "Newsletter footer"
@@ -29,7 +62,16 @@ msgstr "Newsletter header"
 
 # # Documents labels
 msgid "label_newsletter_results"
-msgstr "Documents"
+msgstr "Select links to portal documents"
+
+msgid "label_nb_items"
+msgstr "Maximum results number"
+
+msgid "label_folder"
+msgstr "Limit search to folder"
+
+msgid "label_search"
+msgstr "Set up a dynamic documents search request"
 
 # # Documents labels
 msgid "action_news_letter_sendmail"

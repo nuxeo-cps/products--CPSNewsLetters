@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CPSNewsLetter\n"
-"POT-Creation-Date: 2004-11-05 18:19default\n"
+"POT-Creation-Date: 2005-06-03 19:47default\n"
 "PO-Revision-Date: 2004-09-30 16:24+0100\n"
 "Last-Translator: Fabio Nosari <fabnos@fastwebnet.it>\n"
 "Language-Team: Fabio Nosari <fabnos@fastwebnet.it>\n"
@@ -18,6 +18,39 @@ msgstr ""
 "Language-Name: Italian\n"
 "Domain: default\n"
 
+#.   <input type="button" name="move_down" value="button_move_down" onclick="move_down_items()">
+#.         <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
+#.         <textarea content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
+#.       </input></input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_move_down"
+msgstr ""
+
+#.   <input type="button" name="move_up" value="button_move_up" onclick="move_up_items()">
+#.         <input type="button" name="move_down" value="button_move_down" onclick="move_down_items()">
+#.         <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
+#.         <textarea content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
+#.       </input></input></input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_move_up"
+msgstr ""
+
+#.   <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
+#.         <textarea content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
+#.       </input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_search"
+msgstr ""
+
 # # Documents labels
 msgid "label_newsletter_mailbody_footer"
 msgstr "Piè di pagina della lista di informazione"
@@ -27,6 +60,15 @@ msgstr "Intestazione della lista di informazione"
 
 msgid "label_newsletter_results"
 msgstr "Documenti"
+
+msgid "label_nb_items"
+msgstr ""
+
+msgid "label_folder"
+msgstr ""
+
+msgid "label_search"
+msgstr ""
 
 # # Actions
 msgid "action_news_letter_sendmail"
@@ -52,3 +94,10 @@ msgstr ""
 "sua lettera di informazione in tutti gli oggetti del portale. <br>Una volta "
 "terminata la ricerca e selezionato/i quelli di suo interesse, questo/i "
 "saranno allegato/i al documento di informazione sotto forma di collegamenti."
+
+# # Documents labels
+#, fuzzy
+msgid "help_newsletter_search_widget"
+msgstr ""
+"Si vous enregistrez une recherche, les documents remontés par cette "
+"recherche seront ajoutés à la liste des documents choisis manuellement."

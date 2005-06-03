@@ -27,6 +27,15 @@ msgstr ""
 msgid "label_newsletter_results"
 msgstr ""
 
+msgid "label_nb_items"
+msgstr ""
+
+msgid "label_folder"
+msgstr ""
+
+msgid "label_search"
+msgstr ""
+
 ## Actions
 
 msgid "action_news_letter_sendmail"
@@ -42,7 +51,7 @@ msgstr ""
 msgid "psm_newsletter_successfully_sent"
 msgstr ""
 
-## Portal tyoes
+## Portal types
 
 msgid "portal_type_CPS_News_Letter_title"
 msgstr ""

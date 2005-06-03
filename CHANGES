@@ -6,7 +6,7 @@ New features:
 -
 Bug fixes:
 ~~~~~~~~~~
--
+- various i18n fixes on the Newsletters create/edit layout
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 - changed icon from gif to png
