@@ -12,7 +12,7 @@ False = 0
 newsletter_type = {
     'title': 'portal_type_CPS_News_Letter_title',
     'description': 'portal_type_CPS_News_Letter_description',
-    'content_icon': 'newsletterdocument_icon.gif',
+    'content_icon': 'newsletterdocument_icon.png',
     'content_meta_type': 'CPS Document',
     'product': 'CPSDocument',
     'factory': 'addCPSDocument',
