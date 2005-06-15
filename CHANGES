@@ -6,7 +6,8 @@ New features:
 -
 Bug fixes:
 ~~~~~~~~~~
-- various i18n fixes on the Newsletters create/edit layout
+- Various i18n fixes on the Newsletters create/edit layout.
+- Taking advantage of the new centralized CPSI18n.tests.translations module.
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
-- changed icon from gif to png
+- Changed icon from GIF to PNG.
