@@ -8,6 +8,7 @@ Bug fixes:
 ~~~~~~~~~~
 - Various i18n fixes on the Newsletters create/edit layout.
 - Taking advantage of the new centralized CPSI18n.tests.translations module.
+- Fixed translation files through the CPSI18n/bin/fix_pos script.
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 - Changed icon from GIF to PNG.
