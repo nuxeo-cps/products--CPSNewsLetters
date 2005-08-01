@@ -140,6 +140,7 @@ class CPSNewsLettersInstaller(CPSInstaller):
         self.verifyFlexibleTypes(self.flextypes)
         types = self.newptypes
         self.allowContentTypes(types, 'Workspace')
+        self.allowContentTypes(types, 'Section')
 
     def installNewsLetterWorkflow(self):
         wfdef = {'wfid': 'newsletter_wf',
