@@ -27,5 +27,3 @@ within the portal_subscriptions tool if CPSSubscriptions is installed.
 
 from Products.CMFCore.DirectoryView import registerDirectory
 registerDirectory('skins', globals())
-
-import NewsLetterWidgets

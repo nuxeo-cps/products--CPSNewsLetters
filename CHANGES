@@ -6,7 +6,9 @@ New features:
 -
 Bug fixes:
 ~~~~~~~~~~
--
+- the internal search form & popup actually works (tested on IE 6, mozilla FF,
+  opera 8 and konqueror)
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
--
+- now use the standard InternalLinks widget to avoid code rotting: you might
+  need to run cpsnewsletters_installer again when upgrading
