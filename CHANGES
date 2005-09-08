@@ -1,6 +1,6 @@
 Requires:
 ~~~~~~~~~
--
+- CPSSchemas > 0.44.0
 New features:
 ~~~~~~~~~~~~~
 -
