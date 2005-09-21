@@ -1,4 +1,22 @@
 *******************************************
+** CPSNewsLetters V0.8.0 [R1 build 2005/09/21-15:17 by fguillaume]
+** SVN URL: https://svn.nuxeo.org/pub/CPSNewsLetters/trunk Revision: 27306
+Requires:
+~~~~~~~~~
+- CPSSchemas > 0.44.0
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- the internal search form & popup actually works (tested on IE 6, mozilla FF,
+  opera 8 and konqueror)
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- now use the standard InternalLinks widget to avoid code rotting: you might
+  need to run cpsnewsletters_installer again when upgrading
+
+*******************************************
 ** CPSNewsLetters V0.7.0 [R1 build 2005/08/05-15:38 by fguillaume]
 ** SVN URL: https://svn.nuxeo.org/pub/CPSNewsLetters/trunk Revision: 25550
 Requires:
