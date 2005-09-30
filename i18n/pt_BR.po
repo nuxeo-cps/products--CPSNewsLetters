@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pt-BR\n"
-"POT-Creation-Date: 2004-11-05 18:19default\n"
-"PO-Revision-Date: 2005-06-15 14:17-0300\n"
+"POT-Creation-Date: 2005-06-03 19:47default\n"
+"PO-Revision-Date: 2005-09-29 10:22-0300\n"
 "Last-Translator: Mario Olimpio de Menezes <mario@ipen.br>\n"
 "Language-Team: Portugues do Brasil <pt@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,39 @@ msgstr ""
 "Language-Code: pt_BR\n"
 "Language-Name: Portuguese Brazilian\n"
 "Domain: default\n"
+
+#.   <input type="button" name="move_down" value="button_move_down" onclick="move_down_items()">
+#.         <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
+#.         <textarea content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
+#.       </input></input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_move_down"
+msgstr "Mover para baixo"
+
+#.   <input type="button" name="move_up" value="button_move_up" onclick="move_up_items()">
+#.         <input type="button" name="move_down" value="button_move_down" onclick="move_down_items()">
+#.         <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
+#.         <textarea content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
+#.       </input></input></input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_move_up"
+msgstr "Mover para cima"
+
+#.   <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
+#.         <textarea content="links" attributes="name string:${html_id}:lines;
+#.                                   id id;
+#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
+#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
+#.       </input>
+#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
+msgid "button_search"
+msgstr "Buscar"
 
 # # Documents labels
 msgid "label_newsletter_mailbody_footer"
@@ -27,6 +60,15 @@ msgstr "Cabeçalho do boletim de notícias"
 # # Documents labels
 msgid "label_newsletter_results"
 msgstr "Documentos"
+
+msgid "label_nb_items"
+msgstr "Número máximo de resultados"
+
+msgid "label_folder"
+msgstr "Limitar a busca à pasta"
+
+msgid "label_search"
+msgstr "Definir um pedido de busca em documentos dinâmicos"
 
 # # Documents labels
 msgid "action_news_letter_sendmail"
