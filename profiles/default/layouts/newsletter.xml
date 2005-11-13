@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<layout>
+  <widget id="folder" type="String Widget">
+    <property name="display_width">40</property>
+    <property name="fields">
+     <element value="folder" /></property>
+    <property name="is_i18n">1</property>
+    <property name="label_edit">label_folder</property>
+    <property name="size_max">100</property>
+  </widget>
+  <widget id="mailBodyFooter" type="Text Widget">
+    <property name="fields">
+     <element value="mailBodyFooter" /></property>
+    <property name="is_i18n">1</property>
+    <property name="label_edit">label_newsletter_mailbody_footer</property>
+    <property name="render_format">html</property>
+    <property name="width">72</property>
+  </widget>
+  <widget id="mailBodyHeader" type="Text Widget">
+    <property name="fields">
+     <element value="mailBodyHeader" /></property>
+    <property name="is_i18n">1</property>
+    <property name="label_edit">label_newsletter_mailbody_header</property>
+    <property name="render_format">html</property>
+    <property name="width">72</property>
+  </widget>
+  <widget id="nb_items" type="Int Widget">
+    <property name="fields">
+     <element value="nb_items" /></property>
+    <property name="is_i18n">1</property>
+    <property name="label_edit">label_nb_items</property>
+  </widget>
+  <widget id="query_description" type="String Widget">
+    <property name="display_width">40</property>
+    <property name="fields">
+     <element value="query_description" /></property>
+    <property name="is_i18n">1</property>
+    <property name="label_edit">label_search_description</property>
+    <property name="size_max">100</property>
+  </widget>
+  <widget id="query_fulltext" type="String Widget">
+    <property name="display_width">40</property>
+    <property name="fields">
+     <element value="query_fulltext" /></property>
+    <property name="is_i18n">1</property>
+    <property name="label_edit">label_search_full_text</property>
+    <property name="size_max">100</property>
+  </widget>
+  <widget id="query_portal_type" type="MultiSelect Widget">
+    <property name="fields">
+     <element value="query_portal_type" /></property>
+    <property name="is_i18n">1</property>
+    <property name="label_edit">label_search_portal_type</property>
+    <property name="size">10</property>
+    <property name="vocabulary">navigation_filter_listing_ptypes</property>
+  </widget>
+  <widget id="query_status" type="Select Widget">
+    <property name="fields">
+     <element value="query_status" /></property>
+    <property name="is_i18n">1</property>
+    <property name="label_edit">label_search_status</property>
+    <property name="translated">1</property>
+    <property name="vocabulary">navigation_filter_review_state</property>
+  </widget>
+  <widget id="query_title" type="String Widget">
+    <property name="display_width">40</property>
+    <property name="fields">
+     <element value="query_title" /></property>
+    <property name="is_i18n">1</property>
+    <property name="label_edit">label_search_title</property>
+    <property name="size_max">100</property>
+  </widget>
+  <widget id="results" type="InternalLinks Widget">
+    <property name="absolute">1</property>
+    <property name="fields">
+     <element value="results" /></property>
+    <property name="is_i18n">1</property>
+    <property name="label_edit">label_newsletter_results</property>
+  </widget>
+  <widget id="search" type="Search Widget">
+    <property name="css_class">articleELink</property>
+    <property name="fields"></property>
+    <property name="help">help_newsletter_search_widget</property>
+    <property name="is_i18n">1</property>
+    <property name="label_edit">label_search</property>
+    <property name="widget_ids">
+     <element value="query_fulltext" />
+     <element value="query_title" />
+     <element value="query_description" />
+     <element value="query_status" />
+     <element value="query_portal_type" />
+     <element value="folder" />
+     <element value="nb_items" />
+     <element value="sort_by" /></property>
+  </widget>
+  <widget id="sort_by" type="Select Widget">
+    <property name="fields">
+     <element value="sort_by" /></property>
+    <property name="is_i18n">1</property>
+    <property name="label_edit">label_sort_by</property>
+    <property name="translated">1</property>
+    <property name="vocabulary">search_sort_results_by</property>
+  </widget>
+  <table>
+    <row>
+      <cell id="mailBodyHeader"/>
+    </row>
+    <row>
+      <cell id="results"/>
+    </row>
+    <row>
+      <cell id="search"/>
+    </row>
+    <row>
+      <cell id="mailBodyFooter"/>
+    </row>
+  </table>
+  <property name="layout_create_method"></property>
+  <property name="layout_edit_method"></property>
+  <property name="layout_view_method"></property>
+  <property name="style_prefix">layout_default_</property>
+  <property name="flexible_widgets"></property>
+  <property name="validate_values_expr"></property>
+</layout>
