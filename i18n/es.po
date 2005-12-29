@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CPSNewsLetters\n"
-"POT-Creation-Date: 2004-11-05 18:19default\n"
+"POT-Creation-Date: 2005-12-29 16:19default\n"
 "PO-Revision-Date: 2005-05-27 13:47+0100\n"
 "Last-Translator: Jesús <jesusmartin@lasalle.es>\n"
 "Language-Team: español <jesusmartin@lasalle.es>\n"
@@ -43,6 +43,15 @@ msgstr "cabecera de página del boletín de noticias"
 msgid "label_newsletter_results"
 msgstr "Documentos"
 
+msgid "label_nb_items"
+msgstr ""
+
+msgid "label_folder"
+msgstr ""
+
+msgid "label_search"
+msgstr ""
+
 # # Documents labels
 msgid "action_news_letter_sendmail"
 msgstr "Enviar el boletín de noticias"
@@ -60,9 +69,13 @@ msgid "portal_type_CPS_News_Letter_title"
 msgstr "Boletín de noticias"
 
 msgid "portal_type_CPS_News_Letter_description"
-msgstr "Un objeto \"Boletín de noticias\" permite el envío de un documento por correo a una lista de difusión. Permite también realizar una búsqueda en su contenido. "
+msgstr ""
+"Un objeto \"Boletín de noticias\" permite el envío de un documento por "
+"correo a una lista de difusión. Permite también realizar una búsqueda en su "
+"contenido. "
 
 # # Documents labels
 msgid "help_newsletter_search_widget"
-msgstr "Si registra una página, los documentos devueltos por esta búsqueda serán añadidos a la lista de documentos elegidos manualmente"
-
+msgstr ""
+"Si registra una página, los documentos devueltos por esta búsqueda serán "
+"añadidos a la lista de documentos elegidos manualmente"

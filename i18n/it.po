@@ -2,15 +2,14 @@
 # Your Name <your@email>, Year
 msgid ""
 msgstr ""
-"Project-Id-Version: CPSNewsLetter\n"
-"POT-Creation-Date: 2005-06-03 19:47default\n"
-"PO-Revision-Date: 2004-09-30 16:24+0100\n"
-"Last-Translator: Fabio Nosari <fabnos@fastwebnet.it>\n"
-"Language-Team: Fabio Nosari <fabnos@fastwebnet.it>\n"
+"Project-Id-Version: CPSNewsletter Italian Translation\n"
+"POT-Creation-Date: 2005-12-29 16:19default\n"
+"PO-Revision-Date: 2005-11-10 09:11+0100\n"
+"Last-Translator: Stefano Schintu <schintu@gmail.com>\n"
+"Language-Team: CPS Italian <schintu@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "Preferred-encodings: utf-8 latin1\n"
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
@@ -18,86 +17,61 @@ msgstr ""
 "Language-Name: Italian\n"
 "Domain: default\n"
 
-#.   <input type="button" name="move_down" value="button_move_down" onclick="move_down_items()">
-#.         <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
-#.         <textarea content="links" attributes="name string:${html_id}:lines;
-#.                                   id id;
-#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
-#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
-#.       </input></input>
-#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
-msgid "button_move_down"
-msgstr ""
-
-#.   <input type="button" name="move_up" value="button_move_up" onclick="move_up_items()">
-#.         <input type="button" name="move_down" value="button_move_down" onclick="move_down_items()">
-#.         <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
-#.         <textarea content="links" attributes="name string:${html_id}:lines;
-#.                                   id id;
-#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
-#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
-#.       </input></input></input>
-#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
-msgid "button_move_up"
-msgstr ""
-
-#.   <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
-#.         <textarea content="links" attributes="name string:${html_id}:lines;
-#.                                   id id;
-#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
-#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
-#.       </input>
-#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
-msgid "button_search"
-msgstr ""
-
 # # Documents labels
 msgid "label_newsletter_mailbody_footer"
-msgstr "Piè di pagina della lista di informazione"
+msgstr "Piè di pagina della newsletter"
 
 msgid "label_newsletter_mailbody_header"
-msgstr "Intestazione della lista di informazione"
+msgstr "Intestazione della newsletter"
 
 msgid "label_newsletter_results"
 msgstr "Documenti"
 
 msgid "label_nb_items"
-msgstr ""
+msgstr "Numero massimo di risultati"
 
 msgid "label_folder"
-msgstr ""
+msgstr "Limita la ricerca alle cartelle"
 
 msgid "label_search"
-msgstr ""
+msgstr "Imposta una ricerca dinamica dei documenti"
 
 # # Actions
 msgid "action_news_letter_sendmail"
-msgstr "Invia la lettera di informazione"
+msgstr "Invia la newsletter"
 
 # # Event labels
 msgid "label_newsletter_sendmail"
-msgstr "Lista di informazione"
+msgstr "Newsletter"
 
 # # psm
 msgid "psm_newsletter_successfully_sent"
-msgstr "La lista di informazione è stata inviata con successo."
+msgstr "La newsletter è stata inviata con successo."
 
 # # Portal tyoes
 msgid "portal_type_CPS_News_Letter_title"
-msgstr "Lettera di informazione"
+msgstr "Newsletter"
 
 msgid "portal_type_CPS_News_Letter_description"
 msgstr ""
-"Un oggetto di tipo \"Lettera di informazione\" consente l'invio di un "
-"documento per posta ad una lista di diffusione.<br>Grazie al collegamento "
-"«Ricerca attraverso le proprietà», l'utente ricerca contenuti attinenti la "
-"sua lettera di informazione in tutti gli oggetti del portale. <br>Una volta "
-"terminata la ricerca e selezionato/i quelli di suo interesse, questo/i "
-"saranno allegato/i al documento di informazione sotto forma di collegamenti."
+"La newsletter consente l'invio di un documento per posta ad una lista di "
+"diffusione.<br>Grazie al collegamento «Ricerca attraverso le proprietà», "
+"l'utente ricerca contenuti attinenti la sua newsletter tra tutti gli oggetti "
+"del portale. <br>Una volta terminata la ricerca e selezionato/i quelli di "
+"suo interesse, questo/i saranno allegato/i alla newsletter sotto forma di "
+"collegamenti."
 
 # # Documents labels
-#, fuzzy
 msgid "help_newsletter_search_widget"
 msgstr ""
-"Si vous enregistrez une recherche, les documents remontés par cette "
-"recherche seront ajoutés à la liste des documents choisis manuellement."
+"Se registri una ricerca, i risultati della ricerca saranno aggiunti "
+"all'elenco dei documenti selezionati manualmente."
+
+#~ msgid "button_move_down"
+#~ msgstr "Sposta in basso"
+
+#~ msgid "button_move_up"
+#~ msgstr "Sposta in alto"
+
+#~ msgid "button_search"
+#~ msgstr "Ricerca"

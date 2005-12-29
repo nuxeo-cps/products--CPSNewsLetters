@@ -3,51 +3,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: default\n"
-"POT-Creation-Date: 2005-06-03 19:47default\n"
+"POT-Creation-Date: 2005-12-29 16:19default\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Your Name <your@email>\n"
 "Language-Team: Name <email>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=ISO-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language-Code: LL\n"
-"Language-Name: Language\n"
-"Preferred-encodings: utf-8 latin1\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-encodings: latin9 utf-8\n"
 "Domain: default\n"
-
-#.   <input type="button" name="move_down" value="button_move_down" onclick="move_down_items()">
-#.         <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
-#.         <textarea content="links" attributes="name string:${html_id}:lines;
-#.                                   id id;
-#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
-#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
-#.       </input></input>
-#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
-msgid "button_move_down"
-msgstr ""
-
-#.   <input type="button" name="move_up" value="button_move_up" onclick="move_up_items()">
-#.         <input type="button" name="move_down" value="button_move_down" onclick="move_down_items()">
-#.         <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
-#.         <textarea content="links" attributes="name string:${html_id}:lines;
-#.                                   id id;
-#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
-#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
-#.       </input></input></input>
-#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
-msgid "button_move_up"
-msgstr ""
-
-#.   <input type="button" name="search_item" value="button_search" onclick="open_search_dialog()"><br />
-#.         <textarea content="links" attributes="name string:${html_id}:lines;
-#.                                   id id;
-#.                                   rows python:test(here.size, here.size, None)" define="html_id here/getHtmlWidgetId;
-#.                               links python:'\n'.join(values)" style="width: 90%;visibility:hidden" cols="2" />
-#.       </input>
-#: from ../skins/cps_newsletters/widget_newsletter_internallinks_render.pt
-msgid "button_search"
-msgstr ""
 
 # # Documents labels
 msgid "label_newsletter_mailbody_footer"
