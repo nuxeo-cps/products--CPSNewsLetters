@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <object name="newsletter" meta_type="CPS Layout">
-  <widget id="folder" type="String Widget">
+  <widget name="folder" meta_type="String Widget">
     <property name="display_width">40</property>
     <property name="fields">
      <element value="folder" /></property>
@@ -8,7 +8,7 @@
     <property name="label_edit">label_folder</property>
     <property name="size_max">100</property>
   </widget>
-  <widget id="mailBodyFooter" type="Text Widget">
+  <widget name="mailBodyFooter" meta_type="Text Widget">
     <property name="fields">
      <element value="mailBodyFooter" /></property>
     <property name="is_i18n">1</property>
@@ -16,7 +16,7 @@
     <property name="render_format">html</property>
     <property name="width">72</property>
   </widget>
-  <widget id="mailBodyHeader" type="Text Widget">
+  <widget name="mailBodyHeader" meta_type="Text Widget">
     <property name="fields">
      <element value="mailBodyHeader" /></property>
     <property name="is_i18n">1</property>
@@ -24,13 +24,13 @@
     <property name="render_format">html</property>
     <property name="width">72</property>
   </widget>
-  <widget id="nb_items" type="Int Widget">
+  <widget name="nb_items" meta_type="Int Widget">
     <property name="fields">
      <element value="nb_items" /></property>
     <property name="is_i18n">1</property>
     <property name="label_edit">label_nb_items</property>
   </widget>
-  <widget id="query_description" type="String Widget">
+  <widget name="query_description" meta_type="String Widget">
     <property name="display_width">40</property>
     <property name="fields">
      <element value="query_description" /></property>
@@ -38,7 +38,7 @@
     <property name="label_edit">label_search_description</property>
     <property name="size_max">100</property>
   </widget>
-  <widget id="query_fulltext" type="String Widget">
+  <widget name="query_fulltext" meta_type="String Widget">
     <property name="display_width">40</property>
     <property name="fields">
      <element value="query_fulltext" /></property>
@@ -46,7 +46,7 @@
     <property name="label_edit">label_search_full_text</property>
     <property name="size_max">100</property>
   </widget>
-  <widget id="query_portal_type" type="MultiSelect Widget">
+  <widget name="query_portal_type" meta_type="MultiSelect Widget">
     <property name="fields">
      <element value="query_portal_type" /></property>
     <property name="is_i18n">1</property>
@@ -54,7 +54,7 @@
     <property name="size">10</property>
     <property name="vocabulary">navigation_filter_listing_ptypes</property>
   </widget>
-  <widget id="query_status" type="Select Widget">
+  <widget name="query_status" meta_type="Select Widget">
     <property name="fields">
      <element value="query_status" /></property>
     <property name="is_i18n">1</property>
@@ -62,7 +62,7 @@
     <property name="translated">1</property>
     <property name="vocabulary">navigation_filter_review_state</property>
   </widget>
-  <widget id="query_title" type="String Widget">
+  <widget name="query_title" meta_type="String Widget">
     <property name="display_width">40</property>
     <property name="fields">
      <element value="query_title" /></property>
@@ -70,14 +70,14 @@
     <property name="label_edit">label_search_title</property>
     <property name="size_max">100</property>
   </widget>
-  <widget id="results" type="InternalLinks Widget">
+  <widget name="results" meta_type="InternalLinks Widget">
     <property name="absolute">1</property>
     <property name="fields">
      <element value="results" /></property>
     <property name="is_i18n">1</property>
     <property name="label_edit">label_newsletter_results</property>
   </widget>
-  <widget id="search" type="Search Widget">
+  <widget name="search" meta_type="Search Widget">
     <property name="css_class">articleELink</property>
     <property name="fields"></property>
     <property name="help">help_newsletter_search_widget</property>
@@ -93,7 +93,7 @@
      <element value="nb_items" />
      <element value="sort_by" /></property>
   </widget>
-  <widget id="sort_by" type="Select Widget">
+  <widget name="sort_by" meta_type="Select Widget">
     <property name="fields">
      <element value="sort_by" /></property>
     <property name="is_i18n">1</property>
@@ -103,16 +103,16 @@
   </widget>
   <table>
     <row>
-      <cell id="mailBodyHeader"/>
+      <cell name="mailBodyHeader"/>
     </row>
     <row>
-      <cell id="results"/>
+      <cell name="results"/>
     </row>
     <row>
-      <cell id="search"/>
+      <cell name="search"/>
     </row>
     <row>
-      <cell id="mailBodyFooter"/>
+      <cell name="mailBodyFooter"/>
     </row>
   </table>
   <property name="layout_create_method"></property>
