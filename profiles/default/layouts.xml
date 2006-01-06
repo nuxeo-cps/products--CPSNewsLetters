@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
-<layout-tool>
-  <layout id="newsletter"/>
-</layout-tool>
+<object name="portal_layouts" meta_type="CPS Layouts Tool">
+ <object name="newsletter" meta_type="CPS Layout"/>
+</object>

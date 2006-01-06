@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<object name="portal_skins">
+ <object name="cps_newsletters" meta_type="Filesystem Directory View"
+    directory="CPSNewsLetters/skins/cps_newsletters"/>
+ <skin-path name="CPSSkins">
+  <layer name="cps_newsletters" insert-after="cpsskins_cmf"/>
+ </skin-path>
+ <skin-path name="CPSSkins-macroless">
+  <layer name="cps_newsletters" insert-after="cpsskins_cmf"/>
+ </skin-path>
+</object>
