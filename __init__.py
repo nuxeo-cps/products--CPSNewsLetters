@@ -26,4 +26,17 @@ within the portal_subscriptions tool if CPSSubscriptions is installed.
 """
 
 from Products.CMFCore.DirectoryView import registerDirectory
+from Products.GenericSetup import profile_registry
+from Products.GenericSetup import EXTENSION
+
+from Products.CPSDefault.interfaces import ICPSSite
+
+profile_registry.registerProfile(
+        'default',
+        'CPS NewsLetters',
+        "NewsLetters product for CPS.",
+        'profiles/default',
+        'CPSNewsLetters',
+         EXTENSION,
+         for_=ICPSSite)
 registerDirectory('skins', globals())

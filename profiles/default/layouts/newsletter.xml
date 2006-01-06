@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<layout>
+<object name="newsletter" meta_type="CPS Layout">
   <widget id="folder" type="String Widget">
     <property name="display_width">40</property>
     <property name="fields">
@@ -121,4 +121,4 @@
   <property name="style_prefix">layout_default_</property>
   <property name="flexible_widgets"></property>
   <property name="validate_values_expr"></property>
-</layout>
+</object>
