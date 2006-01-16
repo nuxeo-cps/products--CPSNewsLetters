@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
-<object name="portal_workflow" meta_type="CPS Workflow Tool">
+<object name="portal_workflow">
  <object name="newsletter_wf" meta_type="CPS Workflow"/>
 </object>
