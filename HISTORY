@@ -1,4 +1,21 @@
 *******************************************
+** CPSNewsLetters V0.9.0 [R1 build 2006/01/23-17:29 by fermigier]
+** SVN URL: https://svn.nuxeo.org/pub/CPSNewsLetters/trunk Revision: 31976
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Profile for xml I/O (unused for now)
+- Add extension profile
+
+*******************************************
 ** CPSNewsLetters V0.8.1 [R1 build 2005/11/07-15:22 by fguillaume]
 ** SVN URL: https://svn.nuxeo.org/pub/CPSNewsLetters/trunk Revision: 29058
 Requires:
