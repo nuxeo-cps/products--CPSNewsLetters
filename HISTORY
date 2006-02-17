@@ -1,4 +1,20 @@
 *******************************************
+** CPSNewsLetters V0.10.0 [R1 build 2006/02/17-20:21 by fermigier]
+** SVN URL: https://svn.nuxeo.org/pub/CPSNewsLetters/trunk Revision: 33026
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Move to GenericSetup.
+
+*******************************************
 ** CPSNewsLetters V0.9.0 [R1 build 2006/01/23-17:29 by fermigier]
 ** SVN URL: https://svn.nuxeo.org/pub/CPSNewsLetters/trunk Revision: 31976
 Requires:
