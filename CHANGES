@@ -9,5 +9,4 @@ Bug fixes:
 -
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
-- Added backwards compatibility for CPSNewsLetterInternalLinksWidget, so 
-  that upgrades from CPS < 3.3.4 is possible.
+-

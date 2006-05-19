@@ -1,4 +1,21 @@
 *******************************************
+** CPSNewsLetters V0.11.1 [R1 build 2006/05/19-13:01 by fermigier]
+** SVN URL: https://svn.nuxeo.org/pub/CPS3/products/CPSNewsLetters/trunk Revision: 45740
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Added backwards compatibility for CPSNewsLetterInternalLinksWidget, so 
+  that upgrades from CPS < 3.3.4 is possible.
+
+*******************************************
 ** CPSNewsLetters V0.11.0 [R1 build 2006/03/03-17:45 by ben]
 ** SVN URL: https://svn.nuxeo.org/pub/CPSNewsLetters/trunk Revision: 33914
 Requires:
