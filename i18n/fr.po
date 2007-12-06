@@ -29,7 +29,7 @@ msgstr "Haut de page de la lettre d'information"
 
 # # Documents labels
 msgid "label_newsletter_results"
-msgstr "Ajouter manuellement des liens vers de documents du portail"
+msgstr "Ajouter manuellement des liens vers des documents du portail"
 
 msgid "label_nb_items"
 msgstr "Nombre maximum de documents (0 = pas de limite)"
